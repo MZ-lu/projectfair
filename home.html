@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+   <style type="text/css">
+   	.image {
+   		margin-top: 0px;
+   		width: 100%;
+   		height: 50%;
+   		object-fit: cover;
+   		background-position: center;
+        -webkit-mask-image: linear-gradient(black, transparent);
+        mask-image: linear-gradient(black, transparent);
+
+   	}	
+
+   	.main {
+   		display: flex;
+   		justify-content: space-evenly;
+   		height: 50px;
+   		width: 100%;
+   		position: fixed;
+   		z-index: 1;
+   		margin: 0px;
+   		text-align: center;
+   		align-content: center;
+   		margin-left: -55px;
+
+   	}
+   	.home {
+    	color: white;
+    	background-color: white;
+    	border: none;
+    	width: 100%;
+    	font-family: cursive;
+    	font-size: 50px;
+    	width: 100%;
+    	background-color: rgba(0, 0, 0, 0.9);
+    	text-decoration: none;
+        height: 100px;
+    }
+
+    .gallery {
+    	color: white;
+    	background-color: white;
+    	border: none;
+    	width: 100%;
+    	font-family: cursive;
+    	font-size: 50px;
+    	width: 100%;
+    	background-color: rgba(0, 0, 0, 0.9);
+    	text-decoration: none;
+        height: 100px;
+    }
+
+    
+
+    .sculpture {
+    	color: white;
+    	background-color: white;
+    	border: none;
+    	width: 100%;
+    	font-family: cursive;
+    	font-size: 50px;
+    	width: 100%;
+    	background-color: rgba(0, 0, 0, 0.9);
+    	text-decoration: none;
+        height: 100px;
+    }
+
+    .artmodern {
+    	color: white;
+    	background-color: white;
+    	border: none;
+    	width: 100%;
+    	font-family: cursive;
+    	font-size: 50px;
+    	width: 100%;
+    	background-color: rgba(0, 0, 0, 0.9);
+    	text-decoration: none;
+        height: 100px;
+    }
+
+    .home:hover {
+      color: deepskyblue;
+      text-decoration: none;
+      background-color: black;
+      border-bottom: 3px solid deepskyblue;
+    }
+    .home:active {
+       border-bottom: 3px solid deepskyblue;
+    }
+
+    .gallery:hover {
+      color: deepskyblue;
+      text-decoration: none;
+      background-color: black;
+      border-bottom: 3px solid deepskyblue;
+    }
+    .gallery:active {
+      border-bottom: 3px solid deepskyblue;
+    }
+
+    .sculpture:hover {
+      color: deepskyblue;
+      text-decoration: none;
+      background-color: black;
+      border-bottom: 3px solid deepskyblue;
+    }
+    .sculpture:active {
+      border-bottom: 3px solid deepskyblue;
+    }
+    .artmodern:hover {
+      color: deepskyblue;
+      text-decoration: none;
+      background-color: black;
+      border-bottom: 3px solid deepskyblue;
+    }
+    .artmodern:active {
+      border-bottom: 3px solid deepskyblue;
+    }
+    
+    .artgallery {
+    	color: white;
+    	display: flex;
+    	justify-content: center;
+    	align-items: center;
+    	font-size: 100px;
+    	font-family: "Abel", system-ui;
+    	backdrop-filter: blur(2px);
+    	background-color: rgba(0, 0, 0, 0.3);
+    	width: 100%;
+    	text-align: center;
+    	border: 3px solid #f1f1f1;
+    	position: absolute;
+    	top: 50%;a
+    }
+    .artgallery:hover {
+    	text-shadow: 0 0 10px deepskyblue,
+    	0 0 20px deepskyblue,
+    	0 0 40px deepskyblue,
+    	0 0 80px deepskyblue,
+    	0 0 120px deepskyblue;
+    }
+    
+    .main2 {
+    	margin-top: 900px;
+    }
+
+    .text1 {
+    	 font-family: "Barlow Condensed", sans-serif;
+    	 margin-top: 0px;
+    	 width: 700px;
+    	 color: whitesmoke;
+    	 text-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    	 font-size: 50px;
+    	 opacity: 100%;
+    }
+
+    .block1 {
+    	background-color: white;
+    	color: skyblue;
+    	height: 505px;
+    	width: 100%;
+    	border-radius: 5px;
+    	margin-left: 50px;
+    	box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.5);
+    }
+    .block2 {
+    	background-color: white;
+    	color: skyblue;
+    	height: 505px;
+    	width: 100%;
+    	border-radius: 5px;
+    	box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.5);
+    	margin-top: 100px;
+    	margin-left: 1000px;
+    }
+    .block3 {
+    	background-color: white;
+    	color: skyblue;
+    	height: 505px;
+    	width: 100%;
+    	border-radius: 5px;
+    	margin-left: 50px;
+    	margin-top: 100px;
+    	box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.5);
+
+    }
+    .image1 {
+    	height: 400px;
+    	width: 500px;
+    	text-align: center;
+    	margin-left: 2px;
+    	border-radius: 5px 5px 0 0;
+    	margin-top: 2px;
+    }
+
+    .image2 {
+    	height: 400px;
+    	width: 500px;
+    	text-align: center;
+    	margin-left: 2px;
+    	border-radius: 5px 5px 0 0;
+    	margin-top: 2px;
+    }
+
+    .image3 {
+    	height: 400px;
+    	width: 500px;
+    	text-align: center;
+    	margin-left: 2px;
+    	border-radius: 5px 5px 0 0;
+    	margin-top: 2px;
+    }
+    .art1 {
+    	display: flex;
+    }
+    .art2 {
+    	display: flex;
+    }
+    .art3 {
+    	display: flex;
+    }
+    .mainblock {
+    	display: flex;
+    	flex-wrap: wrap;
+    }
+    span {
+    	color: white;
+        text-shadow: 0 0 10px deepskyblue,
+    	0 0 20px deepskyblue,
+    	0 0 40px deepskyblue,
+    	0 0 80px deepskyblue,
+    	0 0 120px deepskyblue;
+    }
+    .footer{
+      background-color: #cfc3ba;
+      height: 300px;
+      max-width: 2490px;
+      min-height: 480px;
+      display: inline-flex;
+      justify-content: space-around;
+    }
+
+    .logo {
+    	height: 50px;
+    	width: 50px;
+    }
+    .description {
+    	display: inline-flex;
+    	margin-top: 20px;
+    	margin-left: 50px;
+    }
+
+    .text2 {
+        font-family: "Abel", system-ui;
+        color: white;
+    }
+
+    .pre-text {
+    	margin-left: 50px;
+    	font-family: sans-serif;
+    	width: 370px;
+    	color: white;
+    	font-weight: 10;
+    	opacity: 70%;
+	   }
+	   .JIHC {
+	   	color: #0055ff;
+	   	font-weight: 50;
+	   }
+	   
+	   .icon {
+	   	margin-left: 1200px;
+	   	font-size: 36px;
+	   	height: 40px;
+	   	width: 40px;
+	   	color: white;
+	   	text-decoration: none;
+	   }
+	   @media screen (max-width: 1700px) {
+          .main {
+          	width: 100%;
+          }
+          .image {
+          	width: 1700px;
+          	height: 50%;
+          }
+          
+	   }
+	   @media only screen (max-width: 1200px) {
+	   	.main{
+	   		font-size: 50%;
+	   	}
+	   }
+	   @media screen (max-width: 980px) {
+	   	.main{
+	   		font-size: 30px;
+	   	}
+	   }
+	   @media screen (max-width: 767px) {
+   	.main{
+	   		font-size: 20px;
+	   	}
+	   }
+	   @media screen (max-width: 480px) {
+   	.main{
+	   		font-size: 10px;
+	   	}
+	   }
+   </style>
+</head>
+<body style="background-color: #ede6e1; width: 100%;">
+<div class="homepage">
+ <!-- header -->
+  <div class="main" style="margin: 0;">
+  	<ul class="main">
+  		<a class="home" href="home.html">Home</a>
+	    <a class="gallery" href="gallery.html">Gallery</a>
+	    <a class="sculpture" href="sculpture.html">Sculpture</a>
+	    <a class="artmodern" href="artmodern.html">Modern</a>
+	 </ul>
+  </div>
+
+  <div>
+  	<img class="image" src="https://i.pinimg.com/1200x/73/47/27/7347278a2a4002da0c6f0814b5f5835a.jpg">
+  </div>
+ 
+ <h1 class="artgallery">ART GALLERY</h1>
+ <!-- end of header -->
+<!-- main body	-->
+<div>
+	<h1 class="text1">Welcome to <span>art gallery</span>, dear friend!</h1>
+</div>
+<br>
+<div class="mainblock">
+ <div class="art1">
+	<div class="block1">
+		<img class="image1" src="https://i.pinimg.com/1200x/8f/39/3b/8f393b23253544ba8cdde09fa7f5f2e7.jpg">
+		<hr style="width: 700px; margin-top: -2px; color: black; background-color: black;">
+		<h2 style="color: black; margin-top: 5px; font-family: cursive;">The Starry Night</h2>
+	</div>
+ </div>
+ <div class="art2">
+	<div class="block2">
+		<img class="image2" src="https://i.pinimg.com/1200x/ce/28/7a/ce287a5875535ccc5e831e6178ae3f42.jpg">
+		<hr style="width: 700px; margin-top: -2px; color: black; background-color: black;">
+		<h2 style="color: black; margin-top: 5px; font-family: cursive; text-align: right;">Song of Angels</h2>
+	</div>
+ </div>
+  <div class="art3">
+	<div class="block3">
+		<img class="image3" src="https://i.pinimg.com/236x/27/f6/b7/27f6b7078758c2dacdeff49de452d8b7.jpg">
+		<hr style="width: 700px; margin-top: -2px; color: black; background-color: black;">
+		<h2 style="color: black; margin-top: 5px; font-family: cursive; text-align: center;">Register</h2>
+	</div>
+  </div>
+</div>
+<br>
+<!-- end of main body -->
+<!-- footer -->
+<div class="footer">
+   <div class="description">
+	 <img style="margin-top: 10px;" class="logo" src="C:\Users\User\Downloads\logo.png">
+     <h2 class="text2">MZcore</h2>
+   </div>
+	   <h5 class="pre-text">Thank you for using our website. Hope you enjoyed it.<span class="JIHC"> JIHC</span>, Pushkina 154, 2F1.</h5>
+	   <h2 style="color: white; font-family: monospace; font-size: 30px;">Contact us</h2>
+	   <h5 style="color: white; font-family: cursive; opacity: 70%; font-weight: 5;">+8 776 674 2008</h5>
+	   <hr style="color: white; height: 3px; background-color: white;">
+	   <h2 style="font-family: monospace; color: white; font-size: 30px;">Follow us</h2>
+	   <br>
+   <a class="icon" href="https://www.instagram.com/project.fone/#"><i style='font-size:24px' class='fab'>Instagram</i></a>
+ </div>
+<!-- end of footer -->
+</div>
+</body>
+</html>
